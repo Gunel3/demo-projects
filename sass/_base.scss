@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    @include respond(sm-phone) {
+        width: 100vw;
+    }
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include respond(sm-phone) {
+      font-size: 25%;
+      width: 100%;
+    }
+    @include respond(phone) {
+        font-size: 30%;  
+      }
+      @include respond(tab-port) {
+        font-size: 50%;
+      }
+      @include respond(tab-land) {
+        font-size: 56.25%;
+      }
+      @include respond(big-desktop) {
+        font-size: 75%;
+      }
+}
+
+body {
+    background-color: $color-primary;
+}
+
+.body--white {
+    background-color: white;
+}

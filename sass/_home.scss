@@ -1,0 +1,568 @@
+.section {
+  &__filter {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+
+    @include respond(phone) {
+      display: flex;
+      align-items: flex-start;
+    }
+    @include respond(tab-port) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+
+    &--icon {
+      width: 7.2rem;
+      height: 5rem;
+      margin-left: 7rem;
+      align-self: flex-end;
+
+      
+    @include respond(tab-land) {
+      display: none;
+    }
+    }
+  }
+
+  &__box {
+    width: 17rem;
+    margin-right: 2.4rem;
+    & > span {
+      color: $color-dark-grey;
+    }
+
+    @include respond(phone) {
+      width: 70%;
+      margin-right: 1rem;
+    }
+    @include respond(tab-port) {
+      width: 50%;
+      margin-right: 1rem;
+    }
+  }
+
+
+  &__sizebox {
+    width: 26.4rem;
+    height: 7.2rem;
+    color: $color-dark-grey;
+    margin-right: 2.4rem;
+    position: relative;
+
+    &-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+
+      &--pink {
+        font-weight: 600;
+        color: $color-pink;
+        margin-right: 3rem;
+      }
+    }
+
+    &-size {
+      display: flex;
+
+      & > * {
+        width: 6.8rem;
+        height: 4.4rem;
+        padding: 1.3rem 2.4rem;
+        border: 2px solid $color-light-grey;
+        margin-right: 1.1rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      &--pink {
+        color: white;
+        background-color: $color-pink;
+      }
+    }
+    &--icon {
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+    }
+  }
+
+  &__colorbox {
+    position: relative;
+
+    &-text {
+      color: $color-dark-grey;
+    }
+
+    &-color {
+      display: flex;
+      align-items: flex-end;
+      & > * {
+        margin-right: 1.1rem;
+        margin-top: 7px;
+        border-radius: 5px;
+        bottom: 0;
+      }
+
+      &--dark {
+        width: 3.4rem;
+        height: 3.4rem;
+        background-color: #1b2437;
+      }
+      &--light {
+        width: 3rem;
+        height: 3rem;
+        background-color: #127681;
+      }
+      &--xlight {
+        width: 2.6rem;
+        height: 2.6rem;
+        background-color: #32e0ca;
+      }
+    }
+
+    &--icon {
+      position: absolute;
+      right: -2rem;
+      bottom: 1rem;
+
+      @include respond(phone) {
+        position: absolute;
+        right: -2rem;
+        bottom: -0.5rem;
+      }
+    }
+  }
+}
+
+.section {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    &--imgbox {
+      border-radius: 15px 15px 0 0;
+      width: 100%;
+      height: 28rem;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    &--img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--details {
+      width: 80%;
+      margin: auto;
+    }
+
+    &--detailbox {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2.8rem;
+    }
+
+    &--text {
+      margin-top: 2.4rem;
+    }
+
+    &--heading {
+      font-family: $font-display;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    &--paragraph {
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.3rem;
+      color: grey;
+      margin-top: 1.2rem;
+    }
+  }
+  &__cardbox {
+    width: calc((100% / 3) - 1.2rem);
+    padding-bottom: 5rem;
+    margin-bottom: 2.4rem;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+
+    @include respond(phone) {
+        width: calc(100% - 2rem);
+    }
+
+    @include respond(tab-port) {
+        width: calc(100% - 2rem);
+    }
+  }
+}
+
+.section__line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.section__links {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(phone) {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.section__link {
+  &--heading {
+    font-size: 1.6rem;
+    font-family: $font-display;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  &-list {
+    list-style: none;
+  }
+
+  &-item {
+    font-family: $font-primary;
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  &--a:link,
+  &--a:visited {
+    text-decoration: none;
+    color: rgb(138, 136, 136);
+  }
+  &--labelbox {
+    position: relative;
+  }
+  &--icon {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    z-index: 5;
+    top: -8px;
+    right: -1rem;
+  }
+}
+.about {
+  width: 100%;
+  background-image: url(../img/bacg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 11rem;
+
+  @include respond(phone) {
+    width: 100%;
+}
+
+  &__textbox {
+    width: 36rem;
+
+    &--heading {
+      color: white;
+      font-family: $font-display;
+      font-size: 4.5rem;
+      font-weight: 400;
+    }
+
+    &--paragraph {
+      color: white;
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.3rem;
+      padding: 1.5rem 0 2.5rem 0;
+    }
+
+    &--btn {
+      background-color: transparent;
+      border: 3px solid $color-light-grey;
+      color: white;
+      font-weight: 400;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.feature {
+  margin: 4rem 0;
+  height: 44rem;
+  display: flex;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+    width: calc(100% - 2rem);
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+}
+
+  &--leftside {
+    width: 50%;
+    border-radius: 1.5rem;
+    padding: 3.2rem;
+    background-image: url(../img/featureleft.jpg);
+    background-size: cover;
+    background-position: top;
+
+    @include respond(phone) {
+      width: calc(100% - 2rem);
+      margin-right: 0;
+      margin-bottom: 2rem;
+  }
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    &--heading {
+      font-family: $font-display;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    &--line-1 {
+      font-family: $font-primary;
+      font-size: 1.7rem;
+      font-weight: 600;
+      padding: 2.6rem 0 2rem 0;
+    }
+
+    &--line-2 {
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 0.9rem;
+      background-color:rgba(white, .2);
+      width: 9rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+
+  &--rightside {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--above {
+      display: flex;
+      width: 100%;
+      height: calc(50% - 24px);
+    }
+    &-box-1 {
+      width: calc(50% - 12px);
+      border-radius: 1.5rem;
+      padding: 3.2rem;
+      background-color: $color-light-grey;
+      
+
+      &_textbox {
+        position: relative;
+        left: 0;
+        bottom: -6.4rem;
+
+        @include respond(phone) {
+          position: relative;
+          left: 0;
+          bottom: 0;
+      }
+      }
+    }
+    &-box-2 {
+      border-radius: 1.5rem;
+      padding: 3.2rem;
+      width: calc(50% - 12px);
+      background-image: url(../img/featureright1.jpg);
+      background-size: cover;
+
+      &_textbox {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        
+      }
+    }
+    &-box-3 {
+      border-radius: 1.5rem;
+      padding: 3.2rem;
+      width: 100%;
+      height: 50%;
+      background-image: url(../img/denim.jpg);
+      background-size: cover;
+
+      &_textbox {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.check {
+  padding: 2.4rem 4rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &_icon-left {
+    @include respond(phone) {
+      position: absolute;
+      left: 4rem;
+    }
+    @include respond(tab-port) {
+      position: absolute;
+      left: 4rem;
+    }
+  }
+  &_icon-right {
+    @include respond(phone) {
+      position: absolute;
+      right: 4rem;
+    }
+    @include respond(tab-port) {
+      position: absolute;
+      right: 4rem;
+    }
+  }
+
+
+  &__box {
+    width: 17.8rem;
+    height: 23.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom:1.3rem ;
+    
+    &-img {
+      width: 10rem;
+      height: 13rem;
+      object-fit: cover;
+      position: relative;
+
+      &-1 {
+        top: 2rem;
+      }
+      &-2 {
+        top: 2rem;
+      }
+      &-3 {
+        top: 3rem;
+      }
+      &-4 {
+        top: 3rem;
+      }
+    }
+  
+    &-brandtext {
+      font-family: $font-primary;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+
+}
+
+.carousel {
+  margin: 4rem 0;
+
+
+  &-above {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+
+    &_iconbox {
+      display: flex;
+      
+      &-icon {
+        background-color: white;
+        border-radius: 5px;
+
+        &-bullet {
+          margin: 0 1.7rem;
+        }
+      }
+    }
+  }
+
+  &-cards {
+    display: flex;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+  }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+  }
+
+    & > *:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+  }
+
+}
+.links-text {
+  width: 26rem;
+  line-height: 2rem;
+  margin-top: 2.4rem;
+}
+
+.demo--2-links {
+  margin-top: 0;
+}
+
+.demo--2-nav {
+  background-color: white;
+  padding: 2.4rem 0;
+  border-bottom: 2px solid $color-light-grey;
+}

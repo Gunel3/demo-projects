@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow_icn_small" transform="translate(0 24) rotate(-90)">
+    <g id="arrow_icn_small-2" data-name="arrow_icn_small">
+      <rect id="bg" fill="none"/>
+      <path id="arrow" d="M0,0,8,8l8-8" transform="translate(4 8.397)" fill="none" stroke="#d1d1d6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

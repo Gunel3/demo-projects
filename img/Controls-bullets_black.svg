@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.5" height="17" viewBox="0 0 76.5 17">
+  <g id="Controls_bullets_black" data-name="Controls/bullets_black" transform="translate(0.5 0.5)">
+    <g id="bullets_black">
+      <circle id="selection" cx="8" cy="8" r="8" fill="none" stroke="#1b2437" stroke-miterlimit="10" stroke-width="1" opacity="0.4"/>
+      <circle id="bullet" cx="4" cy="4" r="4" transform="translate(4 4)" fill="#1b2437"/>
+      <circle id="bullet-2" data-name="bullet" cx="4" cy="4" r="4" transform="translate(28 4)" fill="#1b2437" opacity="0.6"/>
+      <circle id="bullet-3" data-name="bullet" cx="4" cy="4" r="4" transform="translate(48 4)" fill="#1b2437" opacity="0.4"/>
+      <circle id="bullet-4" data-name="bullet" cx="4" cy="4" r="4" transform="translate(68 4)" fill="#1b2437" opacity="0.2"/>
+    </g>
+  </g>
+</svg>

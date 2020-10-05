@@ -1,0 +1,173 @@
+svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-family: $font-display;
+}
+
+.btn {
+    border: none;
+    width: 16rem;
+    height: 5.2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $font-primary;
+    background-color: white;
+    border: 2px solid $color-pink;
+    color: $color-pink;
+    border-radius: 15px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-pink {
+    color: white;
+    background-color: $color-pink;
+}
+
+.btn_big {
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 3px solid $color-pink;
+
+    &-pink {
+        background-color: $color-pink;
+        color: white;
+    }
+
+}
+
+.numbers {
+    font-family: $font-primary;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-align: end;
+}
+
+.number4 {
+    padding: 7px;
+    background-color: $color-pink;
+    color: white;
+    border-radius: 8px;
+}
+
+#email {
+    padding: 0.6rem;
+    border: 2px solid $color-light-grey;
+    border-radius: 6px;
+}
+
+#clay_shop_logo {
+    width: 14.5rem;
+    height: 3.2rem;
+}
+
+
+.forms {
+    padding: 4rem 0;
+    margin: auto;
+    font-family: $font-primary;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 7.2rem);
+    grid-gap: 2.4rem;
+    justify-content: center;    
+  
+    &__form {
+      align-content: flex-end;
+  
+      & > * {
+        display: block;
+      }
+    }
+  
+    &__label {
+      font-size: 1.6rem;
+      padding-bottom: 0.8rem;
+    }
+  
+    &__input {
+      padding: 1.2rem;
+      border: 2px solid $color-light-grey;
+      border-radius: 8px;
+      width: 26.7rem;
+  
+      &::-webkit-input-placeholder {
+        color: $color-light-grey;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  .forms-2 {
+    padding: 0 0 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3,17rem);
+    grid-template-rows: repeat(2, 7.2rem);
+    
+    &_select {
+      width: 17rem;
+      outline: 0;
+      font-size: 1.4rem;
+      color: $color-light-grey;
+    }
+    &-box {
+        position: relative;
+
+        &-long {
+            grid-column: 2 / span 2;
+        }
+    }
+    &-input {
+        width: 36.4rem;
+    }
+
+    &_icon {
+      background-color: white;
+      position: absolute;
+      right: 6.5px;
+      bottom: 0.5rem;
+    }
+  }
+
+  .form-select {
+    background-color: transparent;
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .form-icon {
+    background-color: $color-primary;
+  }
+
+  input#email {
+    outline: none;
+  }
+
+  .test {
+    min-height: calc(100vh - 17rem);
+  }
+
+  .test-2 {
+    display: flex;
+    align-items: center;
+    
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      height: 24.8rem;
+      justify-content: space-between;
+    }
+  }
